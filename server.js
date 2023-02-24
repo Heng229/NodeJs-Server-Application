@@ -13,6 +13,7 @@ app.get("/", function(req,res){
 app.post("/bmiCalculator.html", function(req,res){
     var bmi = Number(req.body.weight) + Number(req.body.height);
     res.send('The BMI calculated is ' + bmi);
+    res.send('latest changes made on local responsitory master branch');
 });
 
 app.listen(3000, ()=>{
